@@ -1,6 +1,31 @@
 ---
-title: I'm Ken
+title: SalesHub Talk
 date: '2015-05-01T22:12:03.284Z'
 ---
 
-This is my first post on my Gatsby Blog.
+- SalesHub bao gồm 2 phần chính 
+  - CRM: Quản lý thông tin khách hàng, communicate với khách hàng qua Email, Quản lý Leads/Opts, Offers. 
+  - Shipments: Quản lý các giai đoạn sau khi nhận được yêu cầu của khách gồm: Inquiries, RFQ (Đã xong) và Booking Request, Booking Confirmation, Debit Note (Đang phát triển) 
+  - - Inquiries: Quản lý Inquiries Sales gửi cho các bộ phận pricing (GNT, PT, Air, Consol) -> Discuss chỉ có nội bộ 
+    - RFQ: Quản lý Request for Quotations GNT, PT gửi cho hãng tàu, agent để hỏi giá. -> Discuss với đối tác. 
+- Concept Followers trên hệ thống SalesHub 
+  - Thay vì việc foward, copy để truyển tải thông tin như dùng Email truyển thống, SalesHub sử dụng tính năng Followers để phân phối các message tới những người Follow 1 đối tượng nào đó như Leads, Inquiries…. 
+  - Followers có 2 loại: 
+    - Internal: những người có tài khoản trên SalesHub 
+    - External: Khách hàng, đối tác thông qua Email. 
+  - Followers hoạt động như thế nào? Ví dụ: 1 message được Sales A discuss ở đối tượng X sẽ phân phối tới tất cả followers của đối tượng đó. Khi follower Y (là khách hàng sử dụng email) reply tin nhắn nhận được, message cũng sẽ được phân phối tới tất cả followers. vì vậy cần lưu ý khi sử dụng song song Gmail vs CRM để tránh khách hàng nhận **duplicate email**. 
+- CRM: 
+  - Email gửi ra từ hệ thống SalesHub không sử dụng mail của từng users, **mà sử dụng mail channel**, ví dụ: Sales A thuộc GNT, email gửi đi sẽ có reply-to là sales channel email, ví dụ: [gntho@voltransvn.com](mailto:gntho@voltransvn.com) 
+  - Từng Users tự kiểm tra và cập nhật khách hàng của mình, những khách hàng Sales submit form IT đã đưa lên hệ thống, vui lòng recheck lại thông tin. 
+  - Việc sử dụng CRM: 
+    - Đối với nhóm Springs: Sử dụng hoàn toàn bình thường. 
+    - Đối với ACE sales cũ dùng song song với Gmail: Các Lead vẫn đẩy vào SalesHub để ae quản lý công việc, tuy nhiên không discuss trên CRM mà dùng Gmail, Khi đã quen với hệ thống có thể lựa chọn 1 nhóm khách hàng để **chuyển dổi** sang sử dụng hoàn toàn CRM để communicate với KH. 
+- Shipments: 
+  - Inquiries 
+    - Inquiries phải được tạo từ 1 Opts. (Nếu không tồn tại Opts thì vui lòng tạo) 
+    - Không add external followers để tránh việc đối tác nhận được các trao đổi về giá cả của mình 
+    - Mỗi Inquiry có thể có nhiều RFQ 
+  - Request for Quotation 
+    - Mỗi RFQ chỉ discuss với 1 agent/carrier 
+    - Sales được xem trạng thái và các discuss trong RFQ 
+    - Trong một số trường hợp khẩn cấp, Sales có thể chủ động discuss trong RFQ (Lưu ý lại chính sách của công ty) 
